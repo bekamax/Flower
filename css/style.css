@@ -1,0 +1,156 @@
+* {
+  font-family: "Roboto", serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.nav {
+  background-color: blueviolet;
+}
+.navbar {
+  width: 100%;
+  height: 15%;
+}
+.navbar_top {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding: 10px 0px 20px 0px;
+}
+.navbar_top a {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.navbar_top a:hover {
+  color: aliceblue;
+}
+.navbar_top a:active {
+  transform: translateY(2px);
+}
+.contayner {
+  max-width: 80%;
+  margin: auto;
+  height: 100%;
+}
+.navbar_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.logo {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+}
+.searchInput {
+  display: flex;
+  height: 30px;
+  width: 300px;
+}
+.searchInput input {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border: 2px solid white;
+}
+.searchInput button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: orange;
+  border: none;
+  height: 30px;
+  width: 50px;
+  transition: 0.3s;
+}
+.searchInput button:hover {
+  background-color: rgb(225, 148, 5);
+}
+.searchInput button:active {
+  background-color: rgb(161, 107, 5);
+}
+.addProduct {
+  background-color: blueviolet;
+  width: 200px;
+  height: 30px;
+  border: none;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.addProduct:hover {
+  color: aliceblue;
+}
+.addProduct:active {
+  color: aliceblue;
+  transform: translateY(2px);
+}
+/* modal */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.overlov {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+  display: none;
+}
+.logIn .modalwindow {
+  width: 400px;
+  height: 220px;
+}
+.modalwindow {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.2);
+  background-color: aliceblue;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  height: 30px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+  padding: 10px;
+}
+.form button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-size: 18px;
+}

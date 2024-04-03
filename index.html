@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flowers</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav">
+      <div class="navbar">
+        <div class="contayner">
+          <div class="navbar_top">
+            <a href="" id="signUpTriger">Sign up</a>
+            <a href="" id="logInTriger">Log in</a>
+            <a href="" id="logOutTriger">Log out</a>
+          </div>
+          <div class="navbar_bottom">
+            <span class="logo">Flowers</span>
+            <div class="searchInput">
+              <input type="text" placeholder="Search product" />
+              <button>Search</button>
+            </div>
+            <button class="addProduct" id="addProductTriger">
+              Add product
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="overlov"></div>
+    <!--? modal -->
+    <!-- singUp -->
+    <div class="modal singUp">
+      <div class="modalwindow">
+        <form class="form">
+          <label>Name</label>
+          <input
+            type="text"
+            id="nameInpReg"
+            placeholder="Enter your name"
+            required
+          />
+          <label>Surname</label>
+          <input
+            type="text"
+            id="surNameInpReg"
+            placeholder="Enter your surname"
+            required
+          />
+          <label>Email</label>
+          <input
+            type="email"
+            id="emailInpReg"
+            placeholder="Enter your email"
+            required
+          />
+          <label>Password</label>
+          <input
+            id="singUpPass"
+            type="password"
+            maxlength="6"
+            placeholder="Enter a new password"
+            required
+          />
+          <label>Confirm password</label>
+          <input
+            id="singUpConPass"
+            type="password"
+            maxlength="6"
+            placeholder="Repeat password"
+            required
+          />
+          <button id="singUpBtn">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- logIN -->
+
+    <div class="modal logIn">
+      <div class="modalwindow">
+        <form class="form">
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required />
+          <label>Password</label>
+          <input
+            type="password"
+            maxlength="6"
+            placeholder="Enter a new password"
+            required
+          />
+          <button>Log in</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- add product modal -->
+    <div class="modal addProductModal">
+      <div class="modalwindow">
+        <form class="form">
+          <label>Bouquet name</label>
+          <input
+            type="text"
+            placeholder="Enter bouquet name"
+            required
+            id="nameBouInp"
+          />
+          <label>Prise</label>
+          <input
+            type="text"
+            placeholder="Enter bouquet prise"
+            required
+            id="priseBouInp"
+          />
+          <label>Type</label>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            required
+            id="typeBouInp"
+          />
+          <label>Quantity</label>
+          <input
+            type="text"
+            placeholder="Enter quantity"
+            required
+            id="quanBouInp"
+          />
+          <label>Foto</label>
+          <input id="fotoBouInp" type="url" required />
+          <button>Creat product</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./JS/main.js"></script>
+</html>
