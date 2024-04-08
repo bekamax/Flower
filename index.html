@@ -25,9 +25,10 @@
           <div class="navbar_bottom">
             <span class="logo">Flowers</span>
             <div class="searchInput">
-              <input type="text" placeholder="Search product" />
+              <input type="text" id="searchInp" placeholder="Search product" />
               <button>Search</button>
             </div>
+            <div id="name"></div>
             <button class="addProduct" id="addProductTriger">
               Add product
             </button>
@@ -36,7 +37,7 @@
       </div>
     </nav>
     <div class="overlov"></div>
-    <!--? modal -->
+    <!--! modal -->
     <!-- singUp -->
     <div class="modal singUp">
       <div class="modalwindow">
@@ -87,11 +88,17 @@
 
     <div class="modal logIn">
       <div class="modalwindow">
-        <form class="form">
+        <form class="form logInForm">
           <label>Email</label>
-          <input type="email" placeholder="Enter your email" required />
+          <input
+            type="email"
+            id="logInEmail"
+            placeholder="Enter your email"
+            required
+          />
           <label>Password</label>
           <input
+            id="logInPassword"
             type="password"
             maxlength="6"
             placeholder="Enter a new password"
@@ -105,7 +112,7 @@
     <!-- add product modal -->
     <div class="modal addProductModal">
       <div class="modalwindow">
-        <form class="form">
+        <form class="form addForm">
           <label>Bouquet name</label>
           <input
             type="text"
@@ -136,9 +143,51 @@
           />
           <label>Foto</label>
           <input id="fotoBouInp" type="url" required />
-          <button>Creat product</button>
+          <button id="addProduckBtn">Creat product</button>
         </form>
       </div>
+    </div>
+
+    <!-- edd modal -->
+    <div class="modal eddForm">
+      <div class="modalwindow">
+        <form class="form eddForm">
+          <label>Bouquet name</label>
+          <input
+            type="text"
+            placeholder="Enter bouquet name"
+            required
+            id="eddNameBouInp"
+          />
+          <label>Prise</label>
+          <input
+            type="text"
+            placeholder="Enter bouquet prise"
+            required
+            id="eddpriseBouInp"
+          />
+          <label>Type</label>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            required
+            id="eddtypeBouInp"
+          />
+          <label>Quantity</label>
+          <input
+            type="text"
+            placeholder="Enter quantity"
+            required
+            id="eddquanBouInp"
+          />
+          <label>Foto</label>
+          <input id="eddfotoBouInp" type="url" required />
+          <button id="eddProduckBtn">Edd product</button>
+        </form>
+      </div>
+    </div>
+    <div class="contayner">
+      <div class="card_container"></div>
     </div>
   </body>
   <script src="./JS/main.js"></script>

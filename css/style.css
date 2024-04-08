@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-color: rgb(236, 240, 214);
+}
 /* navbar */
 .nav {
   background-color: blueviolet;
@@ -84,6 +86,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   transition: 0.3s;
+  display: none;
 }
 .addProduct:hover {
   color: aliceblue;
@@ -91,6 +94,13 @@
 .addProduct:active {
   color: aliceblue;
   transform: translateY(2px);
+}
+#name {
+  font-size: 40px;
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  display: none;
 }
 /* modal */
 .modal {
@@ -154,3 +164,77 @@
   margin-top: 25px;
   font-size: 18px;
 }
+/* card */
+.card_container {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+.card:hover {
+  background-color: rgb(240, 239, 239);
+}
+.card img {
+  width: 88%;
+  margin: auto;
+  padding-top: 10px;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  object-fit: cover;
+}
+.card_inner {
+  padding: 10px 12px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  gap: 25px;
+  justify-content: space-around;
+}
+
+.card_title_style {
+  font-weight: 500;
+  font-size: 18px;
+}
+.card_title_style2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.buttonsAdmin {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.edit_btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 25px;
+  width: 50px;
+  height: 25px;
+  border: none;
+  transition: 0.2s;
+}
+.delet_btn {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: rgb(255, 0, 0);
+  color: aliceblue;
+  border-radius: 25px;
+  width: 50px;
+  height: 25px;
+  transition: 0.2s;
+}
+.hover_btn:hover {
+  transform: translateY(-2px);
+}
+.hover_btn:active {
+  color: black;
+}
+/* edit modal */
